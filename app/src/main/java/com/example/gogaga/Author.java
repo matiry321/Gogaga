@@ -25,12 +25,6 @@ public class Author {
             return imageurl;
         }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setImageurl(String imageurl) {
-        this.imageurl = imageurl;
-    }
 }
 

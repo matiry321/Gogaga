@@ -16,10 +16,6 @@ import retrofit2.Response;
 
 public class MainActivity2 extends AppCompatActivity {
     private ArrayList<Author> imageLists = new ArrayList<>();
-
-
-
-    private APIInterface.ApiInterface apiInterface;
     private Adapter adapter;
 
 
@@ -27,8 +23,8 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        apiInterface=RetrofirInstance.getRetrofitInstance().create(APIInterface.ApiInterface.class);
-        Call<ArrayList<Author>> call=apiInterface.getImgData();
+        APIInterface.ApiInterface apiInterface = RetrofirInstance.getRetrofitInstance().create(APIInterface.ApiInterface.class);
+        Call<ArrayList<Author>> call= apiInterface.getImgData();
         call.enqueue(new Callback<ArrayList<Author>>() {
             @Override
             public void onResponse(Call<ArrayList<Author>> call, Response<ArrayList<Author>> response) {
