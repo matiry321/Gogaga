@@ -1,5 +1,6 @@
 package com.example.gogaga;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -9,7 +10,7 @@ public interface APIInterface {
 
     public interface ApiInterface {
         @GET("getdata.php")
-        Call<List<Author>> getImgData();
+        Call<ArrayList<Author>> getImgData();
     }
 
 }

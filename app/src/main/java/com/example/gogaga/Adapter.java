@@ -12,14 +12,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>  {
 
-    List<Author> imageLists;
+    ArrayList<Author> imageLists;
     Context context;
 
-            public Adapter(List<Author> imageLists, Context context) {
+            public Adapter(ArrayList<Author> imageLists, Context context) {
                 this.imageLists = imageLists;
                 this.context = context;
             }
