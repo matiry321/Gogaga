@@ -14,7 +14,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity2 extends AppCompatActivity {
-    private RecyclerView rv;
     private List<Author> imageLists;
     private APIInterface.ApiInterface apiInterface;
     private Adapter adapter;

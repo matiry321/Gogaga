@@ -24,5 +24,13 @@ public class Author {
         public String getImageurl() {
             return imageurl;
         }
+
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
+    }
+}
 
