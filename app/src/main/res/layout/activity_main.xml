@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:id="@+id/lottie"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/online"
+        app:lottie_autoPlay="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/lottie"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/maitry"
+        android:id="@+id/image"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_action_name2"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="230dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:text="Login Here !"
+        android:textSize="25dp"
+        android:textColor="#F4F3F6"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Username"
+        android:background="@drawable/draw2"
+        android:textColorHint="#A29CAA"
+        android:textColor="#F4F2F6"
+        android:textSize="15sp"
+        android:id="@+id/edit1"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:background="@drawable/draw2"
+        android:layout_below="@id/edit1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#F4F2F6"
+        android:hint="Email"
+        android:id="@+id/edit2"
+        android:textColorHint="#A29CAA"
+        android:textSize="15sp" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:textColor="#F4F2F6"
+        android:background="@drawable/draw2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Occupation"
+        android:textSize="15sp"
+        android:layout_below="@id/edit2"
+        android:id="@+id/edit3"
+        android:textColorHint="#A29CAA" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/draw2"
+        android:layout_marginTop="20dp"
+        android:hint="Qualification"
+        android:textColor="#F4F2F6"
+        android:layout_below="@id/edit3"
+        android:id="@+id/edit4"
+        android:textColorHint="#A29CAA"
+        android:textSize="15sp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit4"
+        android:text="Register"
+        android:textSize="20dp"
+        android:id="@+id/button"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#203A21"
+        android:textAllCaps="false"
+        android:fontFamily = "monospace"
+        android:background="@drawable/button"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/username"
+        android:layout_marginTop="408dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/image1"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/email"
+        android:layout_below="@id/image1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/image2"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/occupation"
+        android:layout_below="@id/image2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/image3"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/qualification"
+        android:layout_below="@id/image3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/image4"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:id="@+id/floating"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@mipmap/plus"/>
+
+
+</RelativeLayout>
